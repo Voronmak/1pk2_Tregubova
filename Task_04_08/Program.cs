@@ -6,7 +6,7 @@
          * Найти количество пар элементов, 
          * значения которых равны.
          */ 
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             int[] numbers = new int[50];
             Random random = new Random();
