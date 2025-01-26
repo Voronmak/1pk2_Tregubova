@@ -11,7 +11,7 @@
             double a = 8;
             double b = 14;
             double c = Math.PI / 4;
-
+            
             double part1 = b + Math.Pow(a - 1, 1.0 / 3.0);
             double part2 = Math.Pow(part1, 1.0 / 4.0);
             double part3 = Math.Pow(Math.Sin(c), 2) + Math.Tan(c);
