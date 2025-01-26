@@ -9,7 +9,7 @@
        * на текущую дату и выведите соответствующее сообщение
        * об этом
         */
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             Console.WriteLine("Введите год рождения:");
             int year = int.Parse(Console.ReadLine());
