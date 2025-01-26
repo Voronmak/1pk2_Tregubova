@@ -8,7 +8,7 @@
          * но не может быть двух равных по модулю.
          * В полученном массиве найти наибольшее по модулю число.
          */
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             int size = 10;
             int[] array = new int[size];
