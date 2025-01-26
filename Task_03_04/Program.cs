@@ -8,7 +8,7 @@
        * выводиться количество строк 
        * введенных пользователем.
       */
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             int lineCount = 0;
             string input;
