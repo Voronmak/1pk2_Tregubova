@@ -11,7 +11,7 @@
          * от 0 – нет осадков, до 300 мм выпавших осадков.
          */
 
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             int[] precipitation = new int[30];
             Random random = new Random();
