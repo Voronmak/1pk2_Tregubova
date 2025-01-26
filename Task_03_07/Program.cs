@@ -7,7 +7,7 @@
        * свободно падающего тела v = g t ,
        * где 2 g = 9,8 м/с2 – ускорение свободного падения.
        */
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             const double g = 9.8; //Ускорение свободного падения в м/с²
             const double timeInterval = 0.5; //Интервал времени в секундах
