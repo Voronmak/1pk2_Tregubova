@@ -11,7 +11,7 @@ namespace Task_03_09
        * Определите, через сколько лет вклад составит
        * не менее y рублей.
        */
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             Console.WriteLine("Введите сумму вклада (x):");
             double x = Convert.ToDouble(Console.ReadLine());
