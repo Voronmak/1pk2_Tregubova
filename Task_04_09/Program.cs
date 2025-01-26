@@ -9,7 +9,7 @@
         * (LINQ использовать нельзя)
         */
        
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             int[] numbers = new int[10];
             Random random = new Random();
