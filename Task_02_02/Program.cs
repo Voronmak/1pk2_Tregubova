@@ -6,7 +6,7 @@
          * при a = 8, b = 14, c = 𝞹/4
          */
         
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             double a = 8;
             double b = 14;
