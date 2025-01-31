@@ -15,56 +15,53 @@
             int rows = 10;
             int columns = 5;
 
-            // Создаем массив
-            int[,] array = new int[rows, columns];
-
-            // Заполняем массив по 5 правилам
-            for (int i = 0; i < rows; i++)
-            {
-                array[i, 0] = 0;             // 1 столбец содержит нули
-                array[i, 1] = (i + 1) * 2;  // 2 столбец содержит числа кратные 2
-                array[i, 2] = (i + 1) * 3;  // 3 столбец содержит числа кратные 3
-                array[i, 3] = (i + 1) * 4;  // 4 столбец содержит числа кратные 4
-                array[i, 4] = (i + 1) * 5;  // 5 столбец содержит числа кратные 5
-            }
-            // Транспонирование массива
-            int[,] transposedArray = TransposeArray(array);
-
-            // Выводим обновленный массив
-            Console.WriteLine("Обновленный массив:");
-            PrintArray(transposedArray);
-        }
-
-        static void PrintArray(int[,] array)
-        {
-            int rows = array.GetLength(0);
-            int columns = array.GetLength(1);
+            int[,] matrix1 = new int[rows, columns];
+            Random rnd = new Random();
 
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    Console.Write(array[i, j] + "\t");
+                    if (j == 0)
+                    {
+                        matrix1[i, j] = 0;
+                    }
+                    else
+                    {
+                        matrix1[i, j] = rnd.Next(1, 100) * (j + 1);
+                    }
+                }
+            }
+
+            
+            Console.WriteLine("Первоначальный массив :"); // Выводим первоначальный массив
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write(matrix1[i, j] + "\t");
                 }
                 Console.WriteLine();
             }
-        }
 
-        static int[,] TransposeArray(int[,] array)
-        {
-            int rows = array.GetLength(0);
-            int columns = array.GetLength(1);
-            int[,] transposed = new int[columns, rows];
-
+            int[,] tmat = new int[columns, rows];
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    transposed[j, i] = array[i, j];
+                    tmat[j, i] = matrix1[i, j];
                 }
             }
 
-            return transposed;
+            Console.WriteLine("\nПеревернутый  массив:"); // Выводим перевернутый массив
+            for (int i = 0; i < columns; i++)
+            {
+                for (int j = 0; j < rows; j++)
+                {
+                    Console.Write(tmat[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
