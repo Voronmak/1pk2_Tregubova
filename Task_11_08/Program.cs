@@ -19,6 +19,13 @@
             Console.WriteLine($"Максимальное значение: {max}");
         }
 
+        /// <summary>
+        /// Метод, который принимает переменное количество чисел и возвращает их сумму и максимальное значение.
+        /// </summary>
+        /// <param name="numbers">Переменное количество целых чисел.</param>
+        /// <param name="sum">Сумма чисел (выходной параметр).</param>
+        /// <param name="max">Максимальное значение (выходной параметр).</param>
+        
         static void CalculateSumAndMax(out int sum, out int max, params int[] numbers)
         {
             sum = 0;
